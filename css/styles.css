@@ -518,7 +518,15 @@ border-left: 1px solid #EEEEEE;
     margin-bottom: 10px;
 }
 
-/* footer */
+
+
+/* 
+_______________
+footer 
+_______________*/
+
+
+
 .adress{
     font-style: normal;
    
@@ -594,8 +602,63 @@ fill: #FFFFFF;
 .adress-div{
     margin-right: 70px;
 }
+.subscribe {
+    display: block;
+    margin-left: 93px;
+    width: 576px;
+}
+.flex{
+    display: flex;
+}
+.subscribe-button{
+    display: flex;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 10px 32px;
+    cursor: pointer;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    
+    transition: background-color 250ms var(--timing),
+    color 250ms var(--timing);
+}
+.subscribe-svg{
+    margin-left: 10px;
+}
+.subscribe-input{
+padding-top: 15px;
+padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.25;
+   
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    background-color: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-form-field {
+    position: relative;
 
-/* section 4 */
+    width: 448px;
+    height: 50px;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+/* -------------
+section 4 
+-----------------*/
 
 .work{
     margin-bottom: 16px;
@@ -641,8 +704,16 @@ fill: #FFFFFF;
 .command-li:nth-child(4n) {
     margin-right: 0;
 }
+
+
+
  
-/* Постоянные клиенты */
+/* ---------------
+Постоянные клиенты
+-------------------- */
+
+
+
 .clients{
 padding-top: 64px;
 padding-bottom: 64px;
@@ -686,7 +757,14 @@ display: flex;
 .clients-item .list:nth-child(6n) {
     margin-right: 0;
 }
-/* модальное окно */
+
+
+/* ----------------
+модальное окно
+------------------- */
+
+
+
 .backdrop{
     position:fixed;
     top: 0;
@@ -745,7 +823,12 @@ cursor: pointer;
 /* .modal-button-close:hover{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 } */
-/* forms */
+
+
+
+/* ---------
+forms
+------------ */
 .textarea{
     resize: none;
 }
@@ -763,6 +846,7 @@ padding-top: 75px;
 padding-bottom: 165px;
 }
 .form-field{
+position: relative;
 
 width: 448px;
 height: 40px;
@@ -770,8 +854,19 @@ margin-bottom: 10px;
 display: flex;
 flex-direction: column;
 
-
-
+}
+.form-label{
+    position: absolute;
+    top: -20px;
+    left: 0;
+   
+}
+.form-input{
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.form-input:focus + .form-label{
+    color: var(--accent-color);
 }
 .form-field  input {
 border: 1px solid rgba(33, 33, 33, 0.2);
