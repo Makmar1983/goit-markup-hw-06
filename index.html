@@ -273,7 +273,7 @@
     </ul></div> 
     <div class="subscribe">
         <p class="footer-conect">Подпишитесь на рассылку</p>
-       <div class="flex">
+       <div class="subscribe-flex">
            <div class="subscribe-form-field">
         <label for="mail"></label>
         <input class="subscribe-input" type="email" name="mail" id="mail">
@@ -291,43 +291,45 @@
     <!-- Модальное окно -->
 <div data-modal class="backdrop is-hidden">
     <div class="modal">
+
         <form class="form" action="">
-            <div class="form-field">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name" autofocus>
-            </div>
-        
-            <div class="form-field">
-               
-                <input class="form-input" type="tel" name="tel" id="tel">
-                <label class="form-label" for="tel">Телефон</label>
-            </div>
-        
-            <div class="form-field">
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">
-            </div>
-        
-            <button type="submit">Оставить заявку</button>
-        
-            <div role="form-field">
-                <input type="checkbox" name="" value="html" id="html">
-                <label for=" html">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
-            </div>
-            <div class="form-field">
-                <label for="comment">Оставьте комментарий</label>
-                <textarea class="textarea" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
-            </div>
-        
-        
-        
+           <p class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</p>
+         
+            <label class="form-field" for="name">
+                <span class="form-label">Имя</span>
+                <input class="form-input" type="name" name="name" id="name" >
+                <svg class="subscribe-form-div">
+                    <use href="./Images/icons.svg#icon-name" width="13" hight="13"></use>
+                </svg>
+            </label>
+                <label class="form-field" for="tel">
+                    <span class="form-label">Телефон</span> 
+                    <input class="form-input" type="tel" name="tel" id="tel" >
+                    <svg class="subscribe-form-div">
+                     <use href="./Images/icons.svg#icon-tel" width="13" hight="13"></use>
+                    </svg>
+                </label>
+
+                <label class="form-field" for="mail">
+                    <span class="form-label">Почта</span>
+                    <input class="form-input" type="mail" name="mail" id="mail">
+                    <svg class="subscribe-form-div">
+                        <use href="./Images/icons.svg#icon-mail" width="13" hight="13"></use>
+                    </svg>
+                </label>
+
+                <label class="form-textarea" for="">
+                    <span class="form-label">Комментарий</span>
+                <textarea class="textarea-field" name="comment"  placeholder="Введите текст"></textarea>
+</label>
+                <label class="form-checkbox" for="">
+                    <input type="checkbox" name="checkbox">
+                    <p class="form-checkbox-title" >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+                    
+                </label>
+       
         </form>
-        <button type="button" data-modal-close class="modal-button-close">
-            <svg class="button-close-icon" width="18" height="18">
-                <use href="./Images/symbol-defs.svg#icon-cancel-circle"></use>
-            </svg>
-        
-        </button>
+    <button class="button primary button-modal" type="submit">Отправить</button>
     </div>
 </div>
 <script src="./js/modal.js"></script>
