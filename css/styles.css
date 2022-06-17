@@ -966,7 +966,7 @@ border-radius: 4px;
 } */
 .form-checkbox{
     display: flex;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
     font-size: 14px;
@@ -1012,4 +1012,13 @@ background-color: tomato;
 }
 .form-checkbox-title{
     margin-left: 7px;
+}
+.form-checkbox__link{
+    font-size: 14px;
+    line-height: 1.71;
+    
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    
+    color: #2196F3;
 }
