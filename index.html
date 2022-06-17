@@ -235,7 +235,7 @@
                             <use href="./Images/symbol-defs.svg#icon-Logo6"></use>
                         </svg></a>
             </li>
-        </ul>
+        </ul> 
         </div>
     </section>
     </main>
@@ -292,9 +292,8 @@
     <!-- Модальное окно -->
 <div data-modal class="backdrop is-hidden">
     <div class="modal">
-<button  class="modal-button-close" data-modal-close type="button"> <svg>
-    <use href="./Images/icons.svg#icon-krest"></use>
-</svg> </button>
+<button  class="modal-button-close" data-modal-close type="button"><svg class="modal-svg" width="16" heigth="16">
+    <use href="./Images/icons.svg#icon-krest"></use></svg></button>
         <form class="form" action="">
            <p class="modal-form-titel">Оставьте свои данные, мы вам перезвоним</p>
          
@@ -325,9 +324,10 @@
                     <span class="form-label">Комментарий</span>
                 <textarea class="textarea-field" name="comment"  placeholder="Введите текст"></textarea>
 </label>
-                <label class="form-checkbox" for="">
-                    <input type="checkbox" name="checkbox">
-                    <p class="form-checkbox-title" >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+                <label class="form-checkbox">
+                    <input class="hiden input-checkbox" type="checkbox" name="checkbox">
+                    <span class="checkbox-icon"></span>
+                    <p class="form-checkbox-title">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
                     
                 </label>
        
